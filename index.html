@@ -1,65 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>DraftOne Studio Engineering</title>
-  <link rel="icon" type="image/png" href="assets/favicon.png">
-  <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Fully integrated engineering office in KSA delivering Shop Drawings, As-Built, Coordination Models, and QTOs — managed in Saudi Arabia and supported by an expert team in Egypt.">
+  <meta name="description" content="Integrated technical office for Shop Drawings, As-Built, Coordination Models, and QTOs — managed from KSA, executed by an expert remote team in Egypt.">
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <img src="assets/logo.png" alt="DraftOne Studio Engineering logo">
-      <div>
-        <div class="badge">Shop & As-Built • MEP & Civil • Coordination</div>
-        <h1>DraftOne Studio Engineering</h1>
-        <div class="tag">Remote design & drafting (KSA-based, Egypt-backed)</div>
-      </div>
-    </header>
 
-    <!-- HERO (updated text) -->
-    <section class="hero">
-      <p>We are a fully integrated engineering office specialized in delivering complete technical office services for construction projects across Saudi Arabia.</p>
-      <p>Our team of Civil, Architectural, Electrical, and Mechanical engineers works seamlessly to produce high-quality Shop Drawings, As-Built Drawings, Coordination Models, and Quantity Take-Offs, ensuring accuracy, efficiency, and clarity on every project.</p>
-      <p>Managed from Saudi Arabia and supported by our expert team in Egypt, we combine precision, experience, and innovation to deliver results that exceed expectations.</p>
+  <!-- Top bar -->
+  <nav class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#home">
+        <img src="assets/logo.png" alt="DraftOne logo">
+      </a>
+      <ul class="menu" id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </nav>
 
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Engineering that breathes life into projects</h1>
+      <p>Fully integrated technical office for Shop Drawings, As-Built, Coordination Models, and QTOs across Saudi Arabia — managed from KSA and supported by an expert team in Egypt.</p>
       <div class="cta">
-        <a class="btn" href="https://tally.so/r/your-form" target="_blank" rel="noopener">Request a Quotation</a>
-        <a class="btn secondary" href="mailto:info@draftone-studio.com">Email us</a>
-      </div>
-    </section>
-
-    <div class="grid">
-      <div class="card">
-        <h3>What we do</h3>
-        <ul>
-          <li>Shop drawings & As-Built (Civil/Structural/MEP)</li>
-          <li>Design support & multi-discipline coordination</li>
-          <li>HVAC, Plumbing, Fire-fighting drafting</li>
-          <li>Lighting, Power, Low-current drafting</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>How we work</h3>
-        <ul>
-          <li>Client-facing in KSA: meetings, contracts, delivery</li>
-          <li>Execution in Egypt: fast remote production</li>
-          <li>Weekly online check-ins • Drive/OneDrive</li>
-          <li>AutoCAD • Revit • Zoom/Teams • Trello</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:info@draftone-studio.com">info@draftone-studio.com</a><br>
-        WhatsApp: +966 5XXXXXXXX<br>
-        Riyadh, KSA</p>
+        <a class="btn" href="mailto:yourgmail@gmail.com?subject=Quote%20Request%20-%20DraftOne&body=Project%20name:%0AScope:%0ATimeline:%0AIFC%20available:%20Yes/No">Get a Quote</a>
+        <a class="btn ghost" href="#contact">Contact us</a>
       </div>
     </div>
+  </header>
 
-    <hr>
-    <p class="footer">© DraftOne Studio Engineering — All rights reserved</p>
-  </div>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2>About us</h2>
+      <p>We deliver complete technical office services: Shop Drawings, As-Built, Coordination Models, and Quantity Take-Offs. We focus on accuracy, speed, and clarity—so your site teams build with confidence.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section cards">
+    <div class="wrap">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Shop & As-Built</h3>
+          <p>Civil/Structural/MEP with clean layering, naming, and compliant title blocks.</p>
+        </div>
+        <div class="card">
+          <h3>Coordination</h3>
+          <p>Clash notes and structured comment turnaround; AutoCAD / Revit ready.</p>
+        </div>
+        <div class="card">
+          <h3>Quantity Take-Off (QTO)</h3>
+          <p>Accurate take-offs with auditable spreadsheets and clear assumptions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" class="section">
+    <div class="wrap">
+      <h2>Process</h2>
+      <ul class="steps">
+        <li>KSA client interface: meetings, contracts, deliverables.</li>
+        <li>Fast remote production from Egypt by a focused team.</li>
+        <li>Structured reviews and on-time handover (PDF + DWG).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <p>
+        <a href="mailto:yourgmail@gmail.com">yourgmail@gmail.com</a> •
+        <a href="https://wa.me/9665XXXXXXX" target="_blank" rel="noopener">WhatsApp</a> •
+        Riyadh, KSA
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="wrap">
+      <p>© DraftOne Studio Engineering</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="whatsapp" href="https://wa.me/9665XXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path fill="white" d="M19.1 17.4c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1c-.3-.2-1.1-.4-2.1-1.4-.8-.7-1.4-1.7-1.6-2-.2-.3 0-.5.1-.7.1-.1.3-.4.4-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2s1 2.6 1.2 2.8c.2.3 2 3.1 4.8 4.3.7.3 1.3.6 1.7.7.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5z"/><path fill="white" d="M26.8 5.2C24 2.4 20.6 1 16.9 1 8.9 1 2.4 7.5 2.4 15.4c0 2.5.6 4.9 1.9 7.1L2 31l8.7-2.2c2.1 1.2 4.4 1.8 6.7 1.8h.1c8 0 14.5-6.5 14.5-14.4 0-3.9-1.6-7.5-4.4-10.3zM16.9 28.4c-2.1 0-4.1-.6-5.9-1.6l-.4-.2-5.2 1.3 1.4-5-.2-.4c-1.2-1.9-1.8-4-1.8-6.1C4.8 8.7 10.2 3.4 16.9 3.4c3.3 0 6.4 1.3 8.7 3.6 2.3 2.3 3.6 5.4 3.6 8.7-.1 6.8-5.7 12.7-12.3 12.7z"/></svg>
+  </a>
+
+  <script>
+    // Mobile menu toggle
+    const burger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    burger.addEventListener('click', ()=> menu.classList.toggle('open'));
+  </script>
 </body>
 </html>
