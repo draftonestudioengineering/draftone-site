@@ -1,0 +1,26 @@
+
+:root{
+  --primary:#0B1B3B;
+  --accent:#58A6FF;
+  --neutral:#2B2F36;
+  --bg:#F7F8FA;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font:16px/1.6 -apple-system,BlinkMacSystemFont,Inter,Segoe UI,Roboto,Arial,sans-serif;color:#1f2937}
+.container{max-width:1080px;margin:0 auto;padding:24px}
+.header{display:flex;gap:24px;align-items:center;justify-content:flex-start;padding:24px 0}
+.header img{height:72px}
+.hero{background:white;padding:36px 28px;border-radius:18px;border:1px solid #e5e7eb;box-shadow:0 6px 18px rgba(11,27,59,.05)}
+h1{margin:0;color:var(--primary);letter-spacing:.2px;font-size:34px}
+.tag{color:#475569;margin-top:4px}
+.cta{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap}
+.btn{background:var(--primary);color:white;padding:12px 18px;border-radius:12px;border:none;text-decoration:none;display:inline-block}
+.btn.secondary{background:transparent;border:1px solid var(--primary);color:var(--primary)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:16px;padding:16px}
+.card h3{margin:0 0 6px 0;color:var(--primary)}
+.footer{margin:40px 0 12px 0;color:#64748b;text-align:center;font-size:14px}
+hr{border:none;border-top:1px solid #e5e7eb;margin:18px 0}
+.badge{display:inline-block;background:rgba(88,166,255,.12);border:1px solid rgba(88,166,255,.4);color:#0B1B3B;border-radius:999px;padding:4px 10px;font-size:12px}
+ul{margin:8px 0 0 20px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
